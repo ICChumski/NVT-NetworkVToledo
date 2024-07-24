@@ -82,7 +82,7 @@ span{
     max-width: 2735px;
     display:grid;
     grid-template-columns: auto auto;
-    padding: 1.6rem 3.2rem;
+    padding: 9.6rem 3.2rem;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -152,10 +152,9 @@ span{
 .grid-1{
     background-color:#F6F6F6;
     width: 329px;
-    height: 445px;
+    height: auto;
     justify-content: center;
     align-items: center;
-    margin: auto;
     border: 3px #FF7400 solid;
     box-shadow: 5px 10px 18px #888888;
     transition: 1.2s;
@@ -329,7 +328,8 @@ legend{
 }
 #send-answer {
     width: 488px;
-    height: 214px;
+    padding-top: 10px;
+    padding-bottom: 200px;
     border-radius: 14px;
     resize: none;
 }
@@ -519,7 +519,7 @@ a:hover{
 
 
 
-@media screen and (max-width: 1020px){
+@media screen and (max-width: 1355px){
    
     #btn-menu{
         visibility: visible;
@@ -530,7 +530,7 @@ a:hover{
     }
     header, .nav-header{
         align-items: center;
-        padding: 15px;
+        padding: 10px;
         gap: 0;
         display:flex;
         justify-content: space-between;
@@ -565,7 +565,7 @@ a:hover{
     }
     .third-container{
         justify-content: center;
-        grid-template-columns: 50% 10% 30%;
+        grid-template-columns: auto 10% 30%;
         row-gap: 20px;
     }
     #item-bio{
@@ -573,20 +573,19 @@ a:hover{
         grid-column-end: 3;
         grid-row-start: 4;
         grid-row-end: 4;
-        margin-left: 50px;
-        
+       
     }
     .grid-1{
         width: 429px;
         height: 500px;
     }
     .grid-2{
-        margin: auto;
-        width: fit-content;
+        margin: 0;
+        width: 400px;
     }
     .grid-2-1{
-        margin: auto;
-        width: fit-content;
+        margin: 0;
+        width: 400px;
     }
     .grid-2-2{
         width: fit-content;
@@ -602,8 +601,16 @@ a:hover{
         margin: auto;
     }
     .first-type{
+        padding: 0;
         margin-bottom: 20px;
     }
+    .title{
+       
+    }
+    span{
+
+    }
+   
     .background-footer{
         width: 100vh;
     }
