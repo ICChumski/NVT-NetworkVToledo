@@ -10,6 +10,7 @@
 }
 body{
     font-size:1.6rem;
+    width: fit-content;
 }
 header{
     padding: 1.9rem;
@@ -17,6 +18,7 @@ header{
     position: fixed;
     width: 100%;
     display: block;
+    z-index: 999;
 }
 header{
     margin-inline: auto;
@@ -487,8 +489,8 @@ a:hover{
     background-color: #ff73006d;
 }
 #btn-menu{
-    width: 5.0rem;
-    height: 5.0rem;
+    width: 4.0rem;
+    height: 4.0rem;
     border: 3px #FF7400 solid;
     background: transparent;
     border-radius: 2px;
@@ -558,7 +560,7 @@ a:hover{
     }
     .img-style{
         width: fit-content;
-        margin-top: 100px;
+        margin-top: 150px;
         margin-bottom: 0;
     }
     .first-container{
