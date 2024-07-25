@@ -135,6 +135,7 @@ span{
     padding: 5.6rem;
     margin: auto;
     justify-content: center;
+    justify-items: center;
 }
 .third-container{
     max-width: 1400px;
@@ -531,10 +532,8 @@ a:hover{
 
 
 
-@media screen and (max-width: 1355px){
-    body{
-        width: fit-content;
-    }
+@media screen and (max-width: 1290px){
+   
    
     #btn-menu{
         visibility: visible;
@@ -550,7 +549,6 @@ a:hover{
         padding: 10px;
         gap: 0;
         display:flex;
-        justify-content: space-around;
     }
    .line-title{
         display: none;
@@ -581,12 +579,15 @@ a:hover{
         display:flex;
         flex-direction: column;
         row-gap: 25px;
+        padding: 2rem;
+        align-items: center;
        
     }
     .third-container{
         justify-content: center;
-        grid-template-columns: 30% 20%;
+        grid-template-columns: auto 10% auto;
         row-gap: 15px;
+        padding: 2%;
     }
     #item-bio{
         grid-column-start: 1;
@@ -606,17 +607,14 @@ a:hover{
         
         height: 50.0rem;
     }
-    .line-2{
-        display: none;
-    }
     .grid-2{
         margin: 0;
-        width: 20.0rem;
+        width: auto;
         height: auto;
     }
     .grid-2-1{
         margin: 0;
-        width: 20.0rem;
+        width: auto;
         height: auto;
     }
     .grid-2-2{
