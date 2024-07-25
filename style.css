@@ -293,6 +293,9 @@ p{
     border: 2px #FF7400 solid;
     margin-top: 15.6rem;
     margin-left: 6.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .title-contact{
     font-family: 'Montserrat',sans-serif;
@@ -631,6 +634,12 @@ a:hover{
     }
     .text-info{
         margin: auto;
+        width: 100%;
+    }
+    .title-contact{
+        font-size: 3.0rem;
+        padding: 4rem;
+        align-items: center;
     }
     .first-type{
         padding: 0;
@@ -699,9 +708,10 @@ a:hover{
     }
     .text-footer{
         font-size: 3.0rem;
+        width: 100%;
     }
     .ftr-paragraf{
-        font-size: 2.6rem;
+        font-size: 2.4rem;
     }
     .icons-footer{
         display: flex;
@@ -712,6 +722,9 @@ a:hover{
         width: 100px;
         height: 100px;
         align-content: center;
+    }
+    .footer-medium{
+        width: 100%;
     }
 
     .footer-align-svgs{
