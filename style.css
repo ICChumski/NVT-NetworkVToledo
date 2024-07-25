@@ -10,7 +10,6 @@
 }
 body{
     font-size:1.6rem;
-    width: fit-content;
 }
 header{
     padding: 1.9rem;
@@ -530,6 +529,9 @@ a:hover{
 
 
 @media screen and (max-width: 1355px){
+    body{
+        width: fit-content;
+    }
    
     #btn-menu{
         visibility: visible;
