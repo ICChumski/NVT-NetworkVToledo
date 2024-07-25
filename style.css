@@ -38,6 +38,7 @@ a{
     font-size: 1.5rem;
     font-weight: bold;
 }
+  
 .title, h2{
     font-family: 'Inter', sans-serif;
     font-weight: 550;
@@ -89,14 +90,14 @@ span{
     grid-column-gap: 40px;
 }
 .background{
-    height: 100%;
+    height: auto;
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center center;
     background-image: url("./assets/background1.jpg");
 }
 .second-background{
-    height: 100%;
+    height: auto;
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center center;
@@ -180,7 +181,7 @@ span{
 .grid-2-2{
     background-color: #F6F6F6;
     width: 142px;
-    height: 60px;
+    height: auto;
     list-style-type: none;
     border-radius: 15px;
     border: 3px #FF7400 solid;
@@ -284,37 +285,41 @@ p{
 }
 .text-info{
     background-color: #F6F6F6;
-    width: 387px;
-    height: 130px;
-    border-radius: 25px;
+    width: 38.7rem;
+    height: 13.0rem;
+    border-radius: 2.5rem;
     border: 2px #FF7400 solid;
-    margin-top: 156px;
-    margin-left: 67px;
+    margin-top: 15.6rem;
+    margin-left: 6.7rem;
 }
 .title-contact{
     font-family: 'Montserrat',sans-serif;
     color: #FF7400;
     font-size: 3.6rem;
     font-weight: bold;
-    padding: 35px;
+    padding: 3.5rem;
 }
 fieldset{
-    width: 577px;
-    height: 592px;
-    border-radius: 25px;
+    width: 57.7rem;
+    height: auto;
+    border-radius: 2.5rem;
     background-color: #EDEDED;
-    padding: 29px 44px;
-    border: 0px;
+    padding: 2.9rem 4.4rem;
+    border: 0;
 }
 form{
-    margin-bottom: 49px;
+    margin-bottom: 4.9rem;
+}
+input{
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.9rem;
 }
 legend{
     color:#FF7400;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 1.4rem;
-    margin-top: 35px;
+    font-size: 1.8rem;
+    margin-top: 3.5rem;
 }
 #send-name {
     width: 488px;
@@ -334,8 +339,8 @@ legend{
     resize: none;
 }
 .button{
-    width: 224px;
-    height: 44px;
+    width: 22.4rem;
+    height: 4.4rem;
     border-radius: 19px;
     background-color: #FF7400;
     color: white;
@@ -345,7 +350,10 @@ legend{
     font-weight: 400;
 }
 .cont-button{
-    padding: 24px 120px;
+    margin-top: 1.0rem;
+    display: flex;
+    justify-content: space-evenly;
+    
 }
 .button:hover{
     background: linear-gradient(90deg, #FF7400, #c25a00, #904100);
@@ -451,7 +459,7 @@ a:hover{
     background-color: #3535354d;
     backdrop-filter: blur(10px);
     position: absolute;
-    top: 85px;
+    top: 7.0rem;
     left: 0;
     width: 100%;
     height: 0vh;
@@ -479,8 +487,8 @@ a:hover{
     background-color: #ff73006d;
 }
 #btn-menu{
-    width: 40px;
-    height: 40px;
+    width: 5.0rem;
+    height: 5.0rem;
     border: 3px #FF7400 solid;
     background: transparent;
     border-radius: 2px;
@@ -529,11 +537,12 @@ a:hover{
         height:calc(100vh - 85px);
     }
     header, .nav-header{
+        height: 7%;
         align-items: center;
         padding: 10px;
         gap: 0;
         display:flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
    .line-title{
         display: none;
@@ -542,10 +551,10 @@ a:hover{
         display: none;
     }
     .background{
-        width: 100vh;
+        width:auto;
     }
     .second-background{
-        width: 100vh;
+        width:auto;
     }
     .img-style{
         width: fit-content;
@@ -604,15 +613,8 @@ a:hover{
         padding: 0;
         margin-bottom: 20px;
     }
-    .title{
-       
-    }
-    span{
-
-    }
-   
     .background-footer{
-        width: 100vh;
+        width: auto;
     }
     footer{
         padding: 10px;
@@ -645,7 +647,7 @@ a:hover{
         font-size: 2.4rem;
     }
     fieldset{
-        height: 692px;
+        height: auto;
     }
     .button{
         width: 260px;
