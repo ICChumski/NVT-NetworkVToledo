@@ -80,7 +80,7 @@ span{
     color:#FF7400;
 }
 .first-container{
-    height: 80vh;
+    /*height: 80vh;*/
     width: 100%;
     display:grid;
     grid-template-columns: auto auto;
@@ -216,7 +216,6 @@ p{
     margin-bottom:100px;
 }
 .img-resize{
-    width: 100%;
     height: 400px;
     object-fit: cover;
 }
