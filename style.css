@@ -496,9 +496,9 @@ legend{
     background: linear-gradient(248deg, rgb(50, 50, 50) 0%, rgb(140, 140, 140) 100%);
 }
 .plans-btn-premium:hover{
-    background: linear-gradient(-45deg, #ee7752, #511414, #582205, #b87700);
+    background: linear-gradient(-45deg, #560000, #ff9100, hsl(0, 0%, 3%), #f87203);
   background-size: 400% 400%;
-  animation: gradient 8s ease infinite;
+  animation: gradient 6s ease infinite;
 }
 @keyframes gradient {
     0% {
