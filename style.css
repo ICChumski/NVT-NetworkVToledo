@@ -51,6 +51,16 @@ h2{
     font-size: 2.4rem;
     color:#FF7400;
 }
+.price{
+    font-family: 'Inter', sans-serif;
+    font-weight: 780;
+    font-size: 4.8rem;
+    color:#FF7400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
 #introduction-title{
     font-family: 'Montserrat', sans-serif;
     margin-top: 50px;
@@ -151,6 +161,7 @@ span{
     grid-template-columns: 50% 50%;
     max-width: 1260px;
     margin: auto;
+    padding: 40px;
 }
 .grid-1{
     background-color:#F6F6F6;
@@ -162,6 +173,7 @@ span{
     box-shadow: 5px 10px 18px #888888;
     transition: 1.2s;
 }
+
 .grid-2{
     background-color: #F6F6F6;
     width: 410px;
@@ -196,6 +208,13 @@ span{
     font-weight:600;
     padding: 20px;
 }
+.style-li-plans{
+    font-family: 'Montserrat', sans-serif;
+    color:#737373;
+    font-size: 2.0rem;
+    font-weight:600;
+    padding: 15px;
+}
 .style-li-1{
     font-family: 'Montserrat', sans-serif;
     color:#737373;
@@ -205,6 +224,102 @@ span{
     list-style-type: none;
     align-items: center;
 }
+
+.grid-plans{
+    background-color:#F6F6F6;
+    width: 329px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border: 3px #FF7400 solid;
+    box-shadow: 5px 10px 18px #888888;
+    transition: 1.2s;
+    border-radius: 30px;
+}
+.plans-bg, .plans-bg-premium{
+    box-shadow:
+    2px 2px 0.5em rgba(155, 155, 155, 0.55),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.9),
+    inset -1px -1px 0 rgba(0, 0, 0, 0.21)
+  ;
+  border: 1px solid #cacaca;
+  background:
+  -moz-linear-gradient(
+    #ffffff,
+    #e3e3e3
+  );
+  background:
+  -webkit-linear-gradient(
+    #ffffff,
+    #e3e3e3
+  );
+  background:
+  -o-linear-gradient(
+    #ffffff,
+    #e3e3e3
+  );
+  background:
+  linear-gradient(
+    #ffffff,
+    #e3e3e3
+  );
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.plans-info{
+    color: #F6F6F6;
+    font-size: 4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.plans-info-premium{
+    background-image: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
+    filter: drop-shadow(0 0 1px rgba(255, 200, 0, .3));
+    animation: MoveBackgroundPosition 4s ease-in-out infinite;
+    background-size: 150%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+@keyframes MoveBackgroundPosition { 
+    0% {
+        background-position: 0% 50%
+    }
+    
+    50% {
+      background-position: 100% 50%
+    }
+    
+    100% {
+      background-position: 0% 50%
+    }
+  }
+.box-plans, .box-plans-basic, .box-plans-premium{
+    background: rgb(255,0,0);
+    background: linear-gradient(248deg, rgba(255,0,0,1) 0%, rgba(253,29,29,1) 50%, rgba(255,116,0,1) 100%);
+    border-radius: 15px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    width: 90%;
+    margin-top: 15px;
+    height: 6.0rem;
+}
+.box-plans-basic{
+    background: rgb(255,0,0);
+    background: linear-gradient(248deg, rgb(50, 50, 50) 0%, rgb(140, 140, 140) 100%);
+}
+.box-plans-premium{
+    background: rgb(255,201,0);
+    background: linear-gradient(160deg, rgb(53, 53, 53) 0%, rgb(4, 2, 0) 50%, rgb(160, 73, 2) 100%);
+}
+
 p{
     font-family: 'Montserrat', sans-serif;
     color:#737373;
@@ -355,6 +470,51 @@ legend{
     font-family: 'Inter',sans-serif;
     font-size: 2.0rem;
     font-weight: 400;
+    cursor: pointer;
+}
+.plans-btn, .plans-btn-premium, .plans-btn-basic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22.4rem;
+    height: 4.4rem;
+    border-radius: 15px;
+    background-color: #FF7400;
+    color: white;
+    border: 0px;
+    font-family: 'Inter',sans-serif;
+    font-size: 2.0rem;
+    font-weight: 700;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.plans-btn-basic:hover{
+    background: rgb(255,0,0);
+    background: linear-gradient(248deg, rgb(50, 50, 50) 0%, rgb(140, 140, 140) 100%);
+}
+.plans-btn-premium:hover{
+    background: linear-gradient(-45deg, #ee7752, #511414, #582205, #b87700);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+}
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+.plans-btn:hover{
+    background: linear-gradient(248deg, rgba(255,0,0,1) 0%, rgba(253,29,29,1) 50%, rgba(255,116,0,1) 100%);
 }
 .cont-button{
     margin-top: 1.0rem;
@@ -367,6 +527,9 @@ legend{
     border: 2px #EDEDED solid;
 }
 .grid-1:hover{
+    transform: scale(1.019);
+}
+.grid-plans:hover{
     transform: scale(1.05);
 }
 .img-style{
