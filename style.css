@@ -215,6 +215,15 @@ span{
     font-weight:600;
     padding: 15px;
 }
+.ul-plans{
+    list-style-image: url('/assets/correct-icon.svg');
+    align-items: center;
+    
+    
+}
+.style-li-hide{
+    visibility: hidden;
+}
 .style-li-1{
     font-family: 'Montserrat', sans-serif;
     color:#737373;
