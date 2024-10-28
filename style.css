@@ -74,6 +74,9 @@ h3{
     font-weight: 400;
     color: #B06627;
 }
+.logo-header{
+    width: 8%;
+}
 .title-containers{
     font-family: 'Montserrat',sans-serif;
     color: #FF7400;
@@ -91,6 +94,7 @@ span{
 }
 .first-container{
     /*height: 80vh;*/
+    height: 80vh;
     width: 100%;
     display:grid;
     grid-template-columns: auto auto;
@@ -127,6 +131,12 @@ span{
     margin:  0;
     float: right;
 }
+.line-center{
+    width: 25%;
+    height: 0px;
+    border: 1px #FF7400 solid;
+    margin:  auto;
+}
 .line-title{
     width: 40%;
     height: 0px;
@@ -139,6 +149,9 @@ span{
     border: 2px #FF7400 solid;
     margin: auto;
 }
+.resize-icons-valores{
+    width: 20%;
+}
 .second-container{
     display: grid;
     grid-template-columns: 50rem 50rem 50rem;
@@ -147,14 +160,43 @@ span{
     justify-content: center;
     justify-items: center;
 }
-.third-container{
-    max-width: 1400px;
-    margin: auto;
-    display: grid;
-    row-gap: 50px;
-    column-gap: 10px;
-    grid-template-columns: 50rem 10rem 14rem auto;
+.plans{
+    height: auto;
 }
+.third-container{
+    display: grid;
+    justify-content: center;
+    padding-bottom: 120px;
+}
+.valores-row{
+    display: flex;
+    justify-content:center;
+    gap: 100px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+}
+.text-nvtvtoledo{
+    font-size: 2.5rem;
+}
+.title-valores{
+    font-weight: 800;
+}
+.size-pf{
+    font-size: 1.6rem;
+}
+.mini-container{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: auto;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    border: 3px #FF7400 solid;
+    padding: 10px;
+}
+
 .fourth-container{
     display: grid;
     column-gap: 50px;
@@ -201,6 +243,18 @@ span{
     border: 3px #FF7400 solid;
     margin: auto;
 }
+.nvt-text-qs{
+    font-size: 3.2rem;
+}
+.resize-rocket{
+    width: 110%;
+}
+.quemsomos-conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vh;
+}
 .style-li{
     font-family: 'Montserrat', sans-serif;
     color:#737373;
@@ -217,9 +271,9 @@ span{
 }
 .ul-plans{
     list-style-image: url('/assets/correct-icon.svg');
-    align-items: center;
-    
-    
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    text-indent: -12px;
 }
 .style-li-hide{
     visibility: hidden;
@@ -236,7 +290,7 @@ span{
 
 .grid-plans{
     background-color:#F6F6F6;
-    width: 329px;
+    width: 330px;
     height: auto;
     justify-content: center;
     align-items: center;
@@ -340,7 +394,7 @@ p{
     margin-bottom:100px;
 }
 .img-resize{
-    height: 400px;
+    height: 45vh;
     object-fit: cover;
 }
 .text-bio{
@@ -578,9 +632,14 @@ footer{
 }
 
 .img-logonvt{
-    margin-left: 4.0rem;
+    display: flex;
+    flex-direction: column;
     grid-column-start: 1;
     grid-column-end: 1;
+}
+.img-logo-resize{
+    width: 25%;
+   
 }
 .text-footer{
     padding: 0;
@@ -706,6 +765,7 @@ a:hover{
 
 
 
+
 @media screen and (max-width: 1290px){
    
    
@@ -723,6 +783,12 @@ a:hover{
         padding: 10px;
         gap: 0;
         display:flex;
+    }
+    .logo-header{
+        width: 20%;
+    }
+    #introduction-title{
+        font-size: 2.0rem;
     }
    .line-title{
         display: none;
@@ -758,10 +824,18 @@ a:hover{
        
     }
     .third-container{
-        justify-content: center;
-        grid-template-columns: auto 10% auto;
-        row-gap: 15px;
-        padding: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+    .quemsomos-conteudo{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .valores-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     #item-bio{
         grid-column-start: 1;
@@ -815,6 +889,9 @@ a:hover{
     .first-type{
         padding: 0;
         margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .background-footer{
         width: 100%;
@@ -844,10 +921,26 @@ a:hover{
         text-align: center;
     }
     .img-logo-resize{
-        width: 300px;
+        width: 70%;
+        display: flex;
+        
+    }
+    
+    .img-resize{
+        width: 70%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        
+    }
+    .img-style{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .img-logonvt{
         margin-left: 0;
+        align-items: center;
     }
     legend{
         font-size: 2.4rem;
@@ -855,6 +948,7 @@ a:hover{
     fieldset{
         width: 50%;
         height: auto;
+        padding: 0 1 1 0;
     }
     .fieldset-wrapper{
         width: 29rem;
@@ -881,9 +975,7 @@ a:hover{
         font-size: 3.0rem;
         width: 100%;
     }
-    .ftr-paragraf{
-        font-size: 2.4rem;
-    }
+    
     .icons-footer{
         display: flex;
         width: 100px;
